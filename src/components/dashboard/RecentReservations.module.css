@@ -1,0 +1,152 @@
+.card {
+  margin-top: 24px;
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 18px;
+  overflow: hidden;
+  animation: fadeUp 0.8s ease both;
+}
+
+.header {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.label {
+  margin: 0 0 5px;
+  color: #c9a86a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.title {
+  margin: 0;
+  color: #00143d;
+  font-size: 20px;
+}
+
+.viewAll {
+  border: 1px solid #e8eaf0;
+  background: #ffffff;
+  color: #00143d;
+  padding: 9px 16px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.viewAll:hover {
+  background: #00143d;
+  color: #ffffff;
+  border-color: #00143d;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 15px 24px;
+  text-align: left;
+  background: #fafbfc;
+  color: #667085;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.table td {
+  padding: 17px 24px;
+  border-top: 1px solid #f0f1f4;
+  color: #475467;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  transition: all 0.25s ease;
+}
+
+.table tbody tr:hover {
+  background: #fdfbf7;
+}
+
+.guestName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.guestAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #00143d;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.guestName span {
+  color: #172033;
+  font-weight: 600;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.confirmed {
+  background: #edf8f2;
+  color: #26734d;
+}
+
+.pending {
+  background: #fff6e8;
+  color: #a76717;
+}
+
+.cancelled {
+  background: #fbecee;
+  color: #a54855;
+}
+
+.amount {
+  color: #00143d !important;
+  font-weight: 700;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

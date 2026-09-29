@@ -1,0 +1,83 @@
+.card {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #c9a86a;
+  box-shadow: 0 14px 30px rgba(0, 20, 61, 0.1);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.roomNumber {
+  color: #667085;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.available {
+  background: #edf8f2;
+  color: #26734d;
+}
+
+.occupied {
+  background: #fff6e8;
+  color: #a76717;
+}
+
+.reserved {
+  background: #eef2ff;
+  color: #4b5fa8;
+}
+
+.maintenance {
+  background: #fbecee;
+  color: #a54855;
+}
+
+.card h3 {
+  margin: 0;
+  color: #00143d;
+  font-size: 19px;
+}
+
+.card p {
+  margin: 6px 0 22px;
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+.bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding-top: 15px;
+  border-top: 1px solid #eef0f4;
+}
+
+.bottom strong {
+  color: #00143d;
+  font-size: 20px;
+}
+
+.bottom span {
+  color: #98a2b3;
+  font-size: 11px;
+}
